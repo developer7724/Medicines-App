@@ -1,0 +1,255 @@
+.main {
+    width:100vw;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.bg {
+    width:100%;
+    height:auto;
+    /* background:url('/background.jpg'); */
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding-left:54px;
+}
+
+.nav {
+    width:100%;
+    height:74px;
+    background-color:#ffff;
+    display:flex;
+    justify-content:space-between;
+    padding:0px 34px;
+    align-items:center;
+}
+
+.heading {
+    width:1500px;
+    font-size:54px;
+    font-weight:500;
+    margin-top:34px;
+    background-color:#aefcb75c;
+    color:#08489f;
+    box-shadow:4px 4px 32px rgba(0,0,0,0.25);
+    margin-left:-100px;
+    padding-left:100px;
+    margin-right:-100px;
+}
+
+.container {
+    width:95%;
+    height:auto;
+    /* background-color:blueviolet; */
+    margin-top:28px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-bottom:54px;
+}
+
+.card {
+    width:225px;
+    height:288px;
+    background-color:#ffff;
+    border-radius:8px;
+    box-shadow:4px 4px 24px rgba(0,0,0,0.15);
+    margin:12px;
+}
+
+.img {
+    width:225px;
+    height:180px;
+    border-radius:8px 8px 0px 0px;
+    object-fit:cover;
+    object-position:center;
+}
+
+.name {
+    font-size:18px;
+    font-weight:600;
+    margin:6px 0px 6px 12px;
+}
+
+.type {
+    font-size:16px;
+    font-weight:400;
+    margin:12px 0px 12px 12px;
+}
+
+.price {
+    font-size:18px;
+    font-weight:500;
+    margin:6px 0px 6px 12px;
+}
+
+.popup {
+    width:900px;
+    height:auto;
+    padding:24px;
+    background-color:aliceblue;
+    border-radius:6px;
+    box-shadow:4px 4px 32px solid rgba(0,0,0,0.25);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:999;
+    border:0.67px solid rgba(175, 217, 253, 0.727);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.section {
+    width:100%;
+    height:500px;
+    display:flex;
+}
+
+.left {
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.right {
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    /* background-color:blueviolet; */
+    padding-left:38px;
+}
+
+.cross {
+    position:absolute;
+    top:16px;
+    right:16px;
+}
+
+.product_name {
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:18px;
+    text-decoration:underline;
+}
+
+.prod_description {
+    font-size:16px;
+    font-weight:400;
+    margin:14px 0px;
+}
+
+.prod_type {
+    font-size:18px;
+    font-weight:500;
+    margin:14px 0px;
+}
+
+.prod_quantity {
+    font-size:18px;
+    font-weight:400;
+    margin:7px 0px;
+}
+
+.prod_price {
+    font-size:20px;
+    font-weight:600;
+    margin:6px 0px;
+}
+
+.prod_img {
+    width:500px;
+    height:500px;
+    margin-left:100px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .bg {
+        padding-left:20px;
+    }
+
+    .container {
+        width:100%;
+    }
+
+    .card {
+        margin:9px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bg {
+        padding-left:0px;
+    }
+
+    .nav {
+        padding:0px 16px;
+    }
+
+    .container {
+        width:100%;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .heading {
+        width:700px;
+        padding-left:110px;
+    }
+
+    /* .card {
+        width:285px;
+    }
+
+    .img {
+        width:285px;
+        margin-bottom:8px;
+    } */
+
+    .name {
+        margin:14px 0px 14px 14px;
+    }
+
+    .popup {
+        position:fixed;
+        width:100%;
+        height:auto;
+    }
+
+    .left {
+        width:20%;
+    }
+
+    .right {
+        width:80%;
+        margin-left:50px;
+    }
+
+    .prod_description {
+        overflow-y:scroll;
+        font-weight:600;
+    }
+
+    .image {
+        width:20px;
+        height:20px;
+    }
+
+}

@@ -1,0 +1,132 @@
+.main {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background: rgba(255, 255, 255, 1);
+    background:url('/background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    z-index:0; /* Adjust the alpha channel for opacity */
+}
+
+.nav {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:74px;
+    background-color:#ffff;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    padding:0px 34px;
+    align-items:center;
+}
+
+.li {
+    float:left;
+    font-size:18px;
+    margin:0px 12px;
+}
+
+.logout {
+    width:100px;
+    height:30px;
+    background-color:#fc7c5ca0;
+    border-radius:6px;
+    border:1px solid #ff5a31;
+    color:#982002;
+    display:grid;
+    place-items:center;
+}
+
+.batch {
+    width:240px;
+    height:200px;
+    border-radius:16px;
+    padding:20px;
+    margin:0px 54px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+  }
+
+.heading {
+    color:#ffff;
+    font-size:18px;
+    font-weight:500;
+    margin-top:14px;
+}
+
+.bg_y {
+    background-color:#f09f2e;
+  }
+
+.bg_dark {
+    background-color:#3a3788;
+}
+.bg_orange {
+    background-color:#fc7c5c;
+}
+
+.container {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width:100%;
+    height:360px;
+    margin:28px;
+    flex-wrap:nowrap;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .container {
+        left:-28px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .container {
+        margin:0;
+        width:100%;
+        flex-direction:column;
+        height:auto;
+    }
+
+    .batch {
+        margin:16px 0px;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    .logout {
+        margin-left:34px;
+    }
+
+  }
