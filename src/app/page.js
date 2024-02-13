@@ -68,7 +68,7 @@ export default function Home() {
         />
         <ul className={styles.nav_link}>
           <li className={styles.li_ele}><a href="#home">Home</a></li>
-          <li className={styles.li_ele}><a href="#about">About</a></li>
+          <li className={styles.li_ele}><Link href="/about">About</Link></li>
           <li className={styles.li_ele}><Link href="/medicines">Explore</Link></li>
           <li className={styles.li_ele}><a href="#contact">Contact</a></li>
         </ul>
